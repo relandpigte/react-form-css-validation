@@ -1,0 +1,24 @@
+body {
+  background-color: rgba(29, 16, 29, 0.247);
+}
+
+form.form-validation {
+  max-width: 500px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form.form-validation .form-text {
+  display: none;
+}
+
+form.form-validation input:invalid[focused='true'] {
+  border: 1px solid red;
+}
+
+form.form-validation input:invalid[focused='true'] ~ .form-text {
+  display: block;
+}
